@@ -1,0 +1,61 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             tools:context="com.leonoinoi.ezroom.RoomFragment">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/teal50"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="70dp"
+            android:background="@color/teal50"
+            android:paddingTop="10dp"
+            android:scrollbars="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        </android.support.v7.widget.RecyclerView>
+
+        <Button
+            android:id="@+id/edit"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="10dp"
+            android:background="@color/blue500"
+            android:drawableStart="@drawable/ic_create"
+            android:padding="10dp"
+            android:text="@string/button_create"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/delete"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="5dp"
+            android:background="@color/grey700"
+            android:drawableStart="@drawable/ic_cancel"
+            android:padding="10dp"
+            android:text="@string/button_close"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/edit"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>

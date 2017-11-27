@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal50"
+    tools:context="com.leonoinoi.ezroom.RoomTypeEdit">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:layout_marginTop="55dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background_round_normal"
+                android:paddingTop="5dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@color/white"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/ic_settings_black"
+                    android:drawableTint="@color/grey700"
+                    android:hint="@string/hint_room_type"
+                    android:inputType="textPersonName"
+                    android:paddingTop="5dp"
+                    android:selectAllOnFocus="true"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    tools:ignore="SpUsage"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background_round_normal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="-10dp"
+                    android:layout_marginStart="44dp"
+                    android:text="@string/hint_building_name"
+                    android:textColor="@color/grey500"
+                    android:textSize="15dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:paddingEnd="0dp"
+                        android:paddingStart="10dp"
+                        android:paddingTop="10dp"
+                        android:tint="@color/grey700"
+                        app:srcCompat="@drawable/ic_domain"/>
+
+                    <Spinner
+                        android:id="@+id/name_building"
+                        android:layout_width="match_parent"
+                        android:layout_height="46dp"
+                        android:spinnerMode="dialog"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background_round_normal"
+                android:paddingTop="5dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/rental_month"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@color/white"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/ic_monetization_on_black"
+                    android:drawableTint="@color/grey700"
+                    android:hint="@string/hint_price_month"
+                    android:inputType="numberDecimal"
+                    android:paddingTop="5dp"
+                    android:selectAllOnFocus="true"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    tools:ignore="SpUsage"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background_round_normal"
+                android:paddingTop="5dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/deposit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@color/white"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/ic_monetization_on_black"
+                    android:drawableTint="@color/grey700"
+                    android:hint="@string/hint_deposit"
+                    android:inputType="numberDecimal"
+                    android:paddingTop="5dp"
+                    android:selectAllOnFocus="true"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    tools:ignore="SpUsage"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background_round_normal"
+                android:paddingTop="5dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/deposit_period_month"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@color/white"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/ic_event_black"
+                    android:drawableTint="@color/grey700"
+                    android:hint="@string/hint_deposit_period_month"
+                    android:inputType="numberDecimal"
+                    android:paddingTop="5dp"
+                    android:selectAllOnFocus="true"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    tools:ignore="SpUsage"/>
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp">
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="10dp"
+            android:background="@color/blue500"
+            android:drawableStart="@drawable/ic_save"
+            android:drawableTint="@color/white"
+            android:padding="10dp"
+            android:text="@string/button_save"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/cancel"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="5dp"
+            android:background="@color/grey700"
+            android:drawableStart="@drawable/ic_cancel"
+            android:drawableTint="@color/white"
+            android:padding="10dp"
+            android:text="@string/button_cancel"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/save"/>
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.design.widget.CoordinatorLayout>
+
+

@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal50"
+    tools:context="com.leonoinoi.ezroom.BuildingEdit">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:layout_marginTop="55dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background_round_normal"
+                android:paddingTop="5dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@color/white"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/ic_domain"
+                    android:drawableTint="@color/grey700"
+                    android:hint="@string/hint_building_name"
+                    android:inputType="textPersonName"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    tools:ignore="SpUsage"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background_round_normal"
+                android:paddingTop="5dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@color/white"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/ic_call"
+                    android:drawableTint="@color/grey700"
+                    android:hint="@string/hint_phone_number"
+                    android:inputType="phone"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    tools:ignore="SpUsage"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background_round_normal"
+                android:paddingTop="5dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@color/white"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/ic_email"
+                    android:drawableTint="@color/grey700"
+                    android:hint="@string/hint_email"
+                    android:inputType="textEmailAddress"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    tools:ignore="SpUsage"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background_round_normal"
+                android:paddingTop="5dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@color/white"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/ic_map"
+                    android:drawableTint="@color/grey700"
+                    android:hint="@string/hint_address"
+                    android:inputType="text"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    tools:ignore="SpUsage"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background_round_normal"
+                android:paddingTop="5dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/gps"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@color/white"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/ic_place"
+                    android:drawableTint="@color/grey700"
+                    android:hint="@string/hint_gps"
+                    android:inputType="text"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    tools:ignore="SpUsage"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background_round_normal"
+                android:paddingTop="5dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@color/white"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/ic_comment"
+                    android:drawableTint="@color/grey700"
+                    android:hint="@string/hint_comment"
+                    android:inputType="text"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    tools:ignore="SpUsage"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_round_normal"
+                    android:paddingTop="5dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/power_rate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@color/white"
+                        android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/ic_flash_on"
+                        android:drawableTint="@color/grey700"
+                        android:hint="@string/hint_power_rate"
+                        android:inputType="numberDecimal"
+                        android:paddingTop="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        tools:ignore="SpUsage"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_round_normal"
+                    android:paddingTop="5dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/power_bill_min"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@color/white"
+                        android:drawablePadding="10dp"
+                        android:hint="@string/hint_power_bill_min"
+                        android:inputType="numberDecimal"
+                        android:paddingTop="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        tools:ignore="SpUsage"/>
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_round_normal"
+                    android:paddingTop="5dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/water_rate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@color/white"
+                        android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/ic_opacity"
+                        android:drawableTint="@color/grey700"
+                        android:hint="@string/hint_water_rate"
+                        android:inputType="numberDecimal"
+                        android:paddingTop="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        tools:ignore="SpUsage"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_round_normal"
+                    android:paddingTop="5dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/water_bill_min"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@color/white"
+                        android:drawablePadding="10dp"
+                        android:hint="@string/hint_water_bill_min"
+                        android:inputType="numberDecimal"
+                        android:paddingTop="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        tools:ignore="SpUsage"/>
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp">
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="10dp"
+            android:background="@color/blue500"
+            android:drawableStart="@drawable/ic_save"
+            android:drawableTint="@color/white"
+            android:padding="10dp"
+            android:text="@string/button_save"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/cancel"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="5dp"
+            android:background="@color/grey700"
+            android:drawableStart="@drawable/ic_cancel"
+            android:drawableTint="@color/white"
+            android:padding="10dp"
+            android:text="@string/button_cancel"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/save"/>
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.design.widget.CoordinatorLayout>

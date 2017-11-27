@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.leonoinoi.ezroom.OwnerDashBoard">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/teal50"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <Button
+            android:id="@+id/building"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/ic_domain"
+            android:padding="20dp"
+            android:text="BUILDING"
+            app:layout_constraintEnd_toStartOf="@+id/renter"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <Button
+            android:id="@+id/renter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="5dp"
+            android:background="@color/white"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/ic_person"
+            android:padding="20dp"
+            android:text="RENTER"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/building"
+            app:layout_constraintTop_toTopOf="@+id/building"/>
+
+        <Button
+            android:id="@+id/room_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/ic_settings_black"
+            android:padding="20dp"
+            android:text="ROOM TYPE"
+            app:layout_constraintEnd_toStartOf="@+id/option"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/building"/>
+
+        <Button
+            android:id="@+id/option"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="5dp"
+            android:background="@color/white"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/ic_toys_black"
+            android:padding="20dp"
+            android:text="Option"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/room_type"
+            app:layout_constraintTop_toTopOf="@+id/room_type"/>
+
+        <Button
+            android:id="@+id/room"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/ic_hotel"
+            android:padding="20dp"
+            android:text="ROOM"
+            app:layout_constraintEnd_toStartOf="@+id/invoice"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/room_type"/>
+
+        <Button
+            android:id="@+id/invoice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="5dp"
+            android:background="@color/white"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/ic_receipt"
+            android:padding="20dp"
+            android:text="INVOICE"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/room"
+            app:layout_constraintTop_toTopOf="@+id/room"/>
+
+        <Button
+            android:id="@+id/electricity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/ic_flash_on"
+            android:padding="20dp"
+            android:text="ELECTRICITY"
+            app:layout_constraintEnd_toStartOf="@+id/water"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/room"/>
+
+        <Button
+            android:id="@+id/water"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="5dp"
+            android:background="@color/white"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/ic_opacity"
+            android:padding="20dp"
+            android:text="WATER"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/electricity"
+            app:layout_constraintTop_toTopOf="@+id/electricity"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.design.widget.CoordinatorLayout>

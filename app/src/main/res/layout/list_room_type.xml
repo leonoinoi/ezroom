@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/card"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/background_round_normal"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_settings_black"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        tools:ignore="SpUsage"/>
+
+    <TextView
+        android:id="@+id/name_building"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_domain"
+        android:drawableTint="@color/grey700"
+        android:text=""
+        android:textColor="@color/grey700"
+        android:textSize="20dp"
+        tools:ignore="SpUsage"/>
+
+    <TextView
+        android:id="@+id/rental_month"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_monetization_on_black"
+        android:drawableTint="@color/grey700"
+        android:text=""
+        android:textColor="@color/grey700"
+        android:textSize="20dp"
+        tools:ignore="SpUsage"/>
+</LinearLayout>
